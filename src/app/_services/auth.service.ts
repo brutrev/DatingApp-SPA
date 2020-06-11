@@ -19,4 +19,8 @@ export class AuthService {
       })
     );
   }
+
+  register(userForRegister: any) {
+    return this.http.post(this.baseUrl + 'register', userForRegister);
+  }
 }
